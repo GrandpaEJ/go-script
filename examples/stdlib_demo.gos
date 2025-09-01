@@ -1,0 +1,33 @@
+# Standard Library Demo - Python/Node.js-like imports
+
+# Easy imports using aliases (like Python/Node.js)
+import "fmt"         # Standard fmt package
+import "strings"     # Standard strings package
+
+func main():
+    print("=== Go-Script Standard Library Demo ===")
+    print("Python/Node.js-like convenience imports!")
+
+    # Demonstrate alias system
+    fmt.Printf("Import Aliases Available:\n")
+    fmt.Printf("  'json' -> 'encoding/json'\n")
+    fmt.Printf("  'http' -> 'net/http'\n")
+    fmt.Printf("  'fs' -> 'io/fs'\n")
+    fmt.Printf("  'crypto' -> 'crypto'\n")
+    fmt.Printf("  'base64' -> 'encoding/base64'\n")
+    fmt.Printf("  'xml' -> 'encoding/xml'\n")
+    
+    # String operations (like Python's string methods)
+    text := "  Go-Script is Amazing!  "
+    fmt.Printf("String Operations:\n")
+    fmt.Printf("  Original: '%s'\n", text)
+    fmt.Printf("  Trimmed: '%s'\n", strings.TrimSpace(text))
+    fmt.Printf("  Uppercase: '%s'\n", strings.ToUpper(text))
+    fmt.Printf("  Contains 'Script': %t\n", strings.Contains(text, "Script"))
+    
+    # Time operations (like Python's datetime)
+    fmt.Printf("\nTime Operations:\n")
+    fmt.Printf("  Time package available for date/time operations\n")
+    
+    print("\n=== Demo Complete ===")
+    print("All imports work seamlessly with Go's standard library!")

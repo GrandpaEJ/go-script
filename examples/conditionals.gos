@@ -1,0 +1,20 @@
+# Conditional statements example - single function version
+
+func main():
+    print("=== Conditional Examples ===")
+
+    # Check number
+    x := 15
+    print("Checking number:", x)
+
+    if x > 10:
+        print("Number is greater than 10")
+
+    # Check age
+    age := 25
+    print("Age:", age)
+
+    if age > 17:
+        print("Adult")
+
+    print("=== End Examples ===")

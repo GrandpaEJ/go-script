@@ -1,0 +1,23 @@
+# Built-in Functions Demo - No imports needed!
+
+func main():
+    print("=== Go-Script Built-in Functions Demo ===")
+
+    # Basic printing (no fmt import needed!)
+    print("Hello, World!")
+    print("This demonstrates built-in functions")
+    print("No imports required!")
+
+    # String operations
+    text := "Go-Script"
+    print("Text:", text)
+
+    # Number operations
+    number := 42
+    print("Number:", number)
+
+    # Demonstrate that we don't need fmt imports
+    print("Built-in print function works perfectly!")
+    print("No need for fmt.Printf or fmt.Println")
+
+    print("=== All built-ins work without imports! ===")

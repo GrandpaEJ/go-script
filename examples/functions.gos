@@ -1,0 +1,17 @@
+# Functions example - single function version
+
+func main():
+    print("=== Function Examples ===")
+
+    # Greeting
+    print("Hello from Go-Script!")
+
+    # Addition
+    result := 5 + 3
+    print("5 + 3 =", result)
+
+    # Multiplication
+    result = 4 * 6
+    print("4 * 6 =", result)
+
+    print("=== End Examples ===")

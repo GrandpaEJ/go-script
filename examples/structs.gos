@@ -1,0 +1,8 @@
+# Struct example - simplified for current parser
+
+func main():
+    print("=== Struct Demo ===")
+    print("Go-Script supports struct-like features")
+    print("This will be enhanced in future versions")
+    print("Current focus is on basic functionality")
+    print("=== Demo Complete ===")

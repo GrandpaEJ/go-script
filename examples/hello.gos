@@ -1,0 +1,4 @@
+# Simple Hello World example
+func main():
+    print("Hello, World!")
+    print("Welcome to Go-Script!")

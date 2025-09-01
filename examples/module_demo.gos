@@ -1,0 +1,19 @@
+# Module import demonstration - simplified
+
+import "fmt"
+
+func main():
+    print("=== Module Import Demo ===")
+
+    # Demonstrating module concept
+    fmt.Printf("This shows how modules would work\n")
+    fmt.Printf("Currently simplified for parser compatibility\n")
+
+    # Basic math operations (simulating imported functions)
+    result1 := 10 + 20
+    result2 := 7 * 8
+
+    fmt.Printf("Addition: 10 + 20 = %d\n", result1)
+    fmt.Printf("Multiplication: 7 * 8 = %d\n", result2)
+
+    print("=== Demo Complete ===")

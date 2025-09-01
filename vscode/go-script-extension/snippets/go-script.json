@@ -1,0 +1,138 @@
+{
+  "Function": {
+    "prefix": "func",
+    "body": [
+      "func ${1:name}(${2:params})${3: ${4:returnType}}:",
+      "\t${5:# function body}",
+      "\t${0}"
+    ],
+    "description": "Create a function"
+  },
+  "Main Function": {
+    "prefix": "main",
+    "body": [
+      "func main():",
+      "\t${0}"
+    ],
+    "description": "Create main function"
+  },
+  "If Statement": {
+    "prefix": "if",
+    "body": [
+      "if ${1:condition}:",
+      "\t${0}"
+    ],
+    "description": "Create if statement"
+  },
+  "If-Else Statement": {
+    "prefix": "ifelse",
+    "body": [
+      "if ${1:condition}:",
+      "\t${2:# if body}",
+      "else:",
+      "\t${0:# else body}"
+    ],
+    "description": "Create if-else statement"
+  },
+  "If-Elif-Else Statement": {
+    "prefix": "ifelif",
+    "body": [
+      "if ${1:condition1}:",
+      "\t${2:# if body}",
+      "elif ${3:condition2}:",
+      "\t${4:# elif body}",
+      "else:",
+      "\t${0:# else body}"
+    ],
+    "description": "Create if-elif-else statement"
+  },
+  "For Loop": {
+    "prefix": "for",
+    "body": [
+      "for ${1:i} in ${2:range(10)}:",
+      "\t${0}"
+    ],
+    "description": "Create for loop"
+  },
+  "While Loop": {
+    "prefix": "while",
+    "body": [
+      "while ${1:condition}:",
+      "\t${0}"
+    ],
+    "description": "Create while loop"
+  },
+  "Struct": {
+    "prefix": "struct",
+    "body": [
+      "struct ${1:Name}:",
+      "\t${2:field} ${3:type}",
+      "\t${0}"
+    ],
+    "description": "Create struct"
+  },
+  "Method": {
+    "prefix": "method",
+    "body": [
+      "func ${1:methodName}(self ${2:*StructName})${3: ${4:returnType}}:",
+      "\t${0}"
+    ],
+    "description": "Create method"
+  },
+  "Variable Assignment": {
+    "prefix": "var",
+    "body": [
+      "${1:name} := ${0:value}"
+    ],
+    "description": "Create variable assignment"
+  },
+  "Variable Declaration": {
+    "prefix": "vard",
+    "body": [
+      "var ${1:name} ${2:type} = ${0:value}"
+    ],
+    "description": "Create variable declaration"
+  },
+  "Print": {
+    "prefix": "print",
+    "body": [
+      "print(${0:\"message\"})"
+    ],
+    "description": "Print statement"
+  },
+  "Import": {
+    "prefix": "import",
+    "body": [
+      "import \"${0:package}\""
+    ],
+    "description": "Import statement"
+  },
+  "From Import": {
+    "prefix": "from",
+    "body": [
+      "from \"${1:package}\" import ${0:item}"
+    ],
+    "description": "From import statement"
+  },
+  "Error Handling": {
+    "prefix": "err",
+    "body": [
+      "if err != nil:",
+      "\t${0:return err}"
+    ],
+    "description": "Error handling"
+  },
+  "Switch Statement": {
+    "prefix": "switch",
+    "body": [
+      "switch ${1:value}:",
+      "\tcase ${2:case1}:",
+      "\t\t${3:# case1 body}",
+      "\tcase ${4:case2}:",
+      "\t\t${5:# case2 body}",
+      "\tdefault:",
+      "\t\t${0:# default body}"
+    ],
+    "description": "Create switch statement"
+  }
+}

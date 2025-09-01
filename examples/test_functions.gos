@@ -1,0 +1,5 @@
+func main():
+    print("Main function")
+
+    # First function logic
+    print("First function")

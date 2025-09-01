@@ -1,0 +1,8 @@
+# Simple working example
+
+func main():
+    print("Welcome to Go-Script!")
+    print("This is a simple example")
+    print("Numbers:", 42, 3.14)
+    print("Strings:", "Hello", "World")
+    print("Boolean:", true, false)

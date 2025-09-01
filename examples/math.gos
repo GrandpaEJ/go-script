@@ -1,0 +1,25 @@
+# Mathematical operations example - single function version
+
+func main():
+    print("=== Math Examples ===")
+
+    # Basic math
+    a := 20
+    b := 8
+
+    print("Numbers:", a, "and", b)
+    print("Addition:", a + b)
+    print("Subtraction:", a - b)
+    print("Multiplication:", a * b)
+    print("Division:", a / b)
+
+    # Comparisons
+    x := 15
+    y := 10
+
+    print("Comparing", x, "and", y)
+    print("x > y:", x > y)
+    print("x < y:", x < y)
+    print("x == y:", x == y)
+
+    print("=== End Examples ===")

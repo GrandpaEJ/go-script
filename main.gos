@@ -1,0 +1,5 @@
+# Welcome to Go-Script!
+
+func main():
+    print("Hello, Go-Script!")
+    print("Edit this file to get started.")

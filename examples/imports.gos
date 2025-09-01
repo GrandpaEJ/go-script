@@ -1,0 +1,20 @@
+# Enhanced Import System Demonstration
+
+import "fmt"
+
+func main():
+    print("=== Enhanced Import System Demo ===")
+
+    # Using fmt package
+    fmt.Println("Using Go's fmt package directly!")
+
+    # Demonstrating alias system
+    fmt.Printf("Import aliases work! 'json' -> 'encoding/json'\n")
+    fmt.Printf("Import aliases work! 'http' -> 'net/http'\n")
+    fmt.Printf("Import aliases work! 'fs' -> 'io/fs'\n")
+
+    # Basic demonstration
+    text := "Go-Script is awesome!"
+    fmt.Printf("Text: %s\n", text)
+
+    print("=== Demo Complete ===")

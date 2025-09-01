@@ -1,0 +1,18 @@
+# Variables and basic operations example
+
+func main():
+    # Simple variable assignments
+    name := "Go-Script"
+    version := 1
+    active := true
+    
+    print("Language:", name)
+    print("Version:", version)
+    print("Active:", active)
+    
+    # Basic arithmetic
+    x := 10
+    y := 5
+    sum := x + y
+    
+    print("Sum of", x, "and", y, "is", sum)

@@ -1,0 +1,21 @@
+# Multiple functions example - simplified for current parser
+
+func main():
+    print("=== Multiple Functions Demo ===")
+
+    # Function 1 logic
+    print("Hello from function 1!")
+
+    # Function 2 logic
+    print("Goodbye from function 2!")
+
+    # Function 3 logic
+    print("Numbers:", 1, 2, 3, 4, 5)
+
+    print("=== Demo Complete ===")
+
+    test()
+
+
+func test():
+    print("This is a test!")

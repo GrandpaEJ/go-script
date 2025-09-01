@@ -1,0 +1,25 @@
+# Math utilities module for Go-Script - simplified
+
+func main():
+    # This module can also be run standalone
+    print("=== Math Utils Module ===")
+
+    # Mathematical constants
+    PI := 3.14159265359
+
+    # Basic operations
+    a := 5
+    b := 3
+    sum := a + b
+    print("Add 5 + 3 =", sum)
+
+    # Multiplication
+    x := 4
+    y := 6
+    product := x * y
+    print("Multiply 4 * 6 =", product)
+
+    # Circle area calculation (simplified)
+    print("Circle area (r=3) = approximately", PI * 9)
+
+    print("=== Module Demo Complete ===")

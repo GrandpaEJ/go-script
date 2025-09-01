@@ -1,0 +1,30 @@
+# Calculator example - single function version
+
+func main():
+    print("=== Calculator Demo ===")
+
+    # Addition
+    a := 10
+    b := 5
+    result := a + b
+    print("Addition:", a, "+", b, "=", result)
+
+    # Subtraction
+    a = 20
+    b = 8
+    result = a - b
+    print("Subtraction:", a, "-", b, "=", result)
+
+    # Multiplication
+    a = 6
+    b = 7
+    result = a * b
+    print("Multiplication:", a, "*", b, "=", result)
+
+    # Division
+    a = 15
+    b = 3
+    result = a / b
+    print("Division:", a, "/", b, "=", result)
+
+    print("=== Demo Complete ===")

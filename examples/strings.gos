@@ -1,0 +1,23 @@
+# String operations example - single function version
+
+func main():
+    print("=== String Examples ===")
+
+    # String basics
+    name := "Go-Script"
+    greeting := "Hello"
+
+    print("Name:", name)
+    print("Greeting:", greeting)
+    print("Combined:", greeting + ", " + name + "!")
+
+    # String comparisons
+    lang1 := "Go-Script"
+    lang2 := "Python"
+    lang3 := "Go-Script"
+
+    print("Comparing strings:")
+    print(lang1, "==", lang2, ":", lang1 == lang2)
+    print(lang1, "==", lang3, ":", lang1 == lang3)
+
+    print("=== End Examples ===")

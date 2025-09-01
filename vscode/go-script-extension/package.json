@@ -1,0 +1,176 @@
+{
+  "name": "go-script",
+  "displayName": "Go-Script",
+  "description": "Language support for Go-Script (.gos) files",
+  "version": "0.1.0",
+  "publisher": "go-script",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Syntax Highlighting",
+    "Snippets"
+  ],
+  "keywords": [
+    "go-script",
+    "gos",
+    "go",
+    "scripting",
+    "transpiler"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:go-script"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "go-script",
+        "aliases": [
+          "Go-Script",
+          "go-script",
+          "gos"
+        ],
+        "extensions": [
+          ".gos"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/gos-light.svg",
+          "dark": "./icons/gos-dark.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "go-script",
+        "scopeName": "source.go-script",
+        "path": "./syntaxes/go-script.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "go-script",
+        "path": "./snippets/go-script.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "go-script.run",
+        "title": "Run Go-Script File",
+        "category": "Go-Script"
+      },
+      {
+        "command": "go-script.build",
+        "title": "Build Go-Script File",
+        "category": "Go-Script"
+      },
+      {
+        "command": "go-script.debug",
+        "title": "Debug Go-Script File",
+        "category": "Go-Script"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "go-script.run",
+        "key": "ctrl+f5",
+        "when": "editorTextFocus && resourceExtname == .gos"
+      },
+      {
+        "command": "go-script.build",
+        "key": "ctrl+shift+b",
+        "when": "editorTextFocus && resourceExtname == .gos"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "resourceExtname == .gos",
+          "command": "go-script.run",
+          "group": "navigation"
+        },
+        {
+          "when": "resourceExtname == .gos",
+          "command": "go-script.build",
+          "group": "navigation"
+        },
+        {
+          "when": "resourceExtname == .gos",
+          "command": "go-script.debug",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Go-Script",
+      "properties": {
+        "go-script.gosPath": {
+          "type": "string",
+          "default": "gos",
+          "description": "Path to the gos executable"
+        },
+        "go-script.enableAutoCompletion": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable auto-completion for Go-Script"
+        },
+        "go-script.enableSyntaxHighlighting": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable syntax highlighting for Go-Script"
+        },
+        "go-script.enableErrorChecking": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable real-time error checking"
+        },
+        "go-script.debugMode": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable debug mode for development"
+        }
+      }
+    },
+    "problemMatchers": [
+      {
+        "name": "go-script",
+        "owner": "go-script",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "message": 5
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^4.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrandpaEJ/go-script.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GrandpaEJ/go-script/issues"
+  },
+  "homepage": "https://github.com/GrandpaEJ/go-script#readme",
+  "license": "Apache-2.0",
+  "author": "GrandpaEJ",
+  "dependencies": {
+    "@vscode/vsce": "^3.6.0"
+  }
+}
